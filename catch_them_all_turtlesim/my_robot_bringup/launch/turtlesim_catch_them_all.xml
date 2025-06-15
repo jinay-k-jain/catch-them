@@ -1,0 +1,10 @@
+<launch>
+    <node pkg="turtlesim" exec="turtlesim_node"  name="Master"/>
+    <node pkg = "catch_them_all_turtlesim" exec = "turtle_controller"/>
+        <!-- <param name="speed_factor" value="2"/>
+        <param name="catch_nearest_or_not" value="True"/>
+    </node> -->
+    <node pkg = "catch_them_all_turtlesim" exec = "turtle_spawner"/>
+        <!-- <param name="interval_of_spawning_new_turtle" value="1.0"/>
+    </node>     -->
+</launch>
